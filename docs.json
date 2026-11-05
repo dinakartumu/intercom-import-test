@@ -11,11 +11,11 @@
   },
   "navigation": [
     {
+      "page": "index"
+    },
+    {
       "group": "Getting Started",
       "pages": [
-        {
-          "page": "index"
-        },
         {
           "page": "quickstart"
         }
@@ -26,6 +26,318 @@
       "pages": [
         {
           "page": "guides/writing-docs"
+        }
+      ]
+    },
+    {
+      "page": "inviting-team-members"
+    },
+    {
+      "page": "integrating-with-zendesk"
+    },
+    {
+      "page": "what-is-pageloop-what-is-pageloop"
+    },
+    {
+      "page": "managing-project-visibility-and-sharing"
+    },
+    {
+      "page": "how-to-use-refine-and-rerun-to-update-articles"
+    },
+    {
+      "page": "what-is-pageloop"
+    },
+    {
+      "page": "how-pageloop-ai-works"
+    },
+    {
+      "page": "sample-art"
+    },
+    {
+      "page": "sample-heading-article"
+    },
+    {
+      "page": "how-to-share-petitions-on-change-org"
+    },
+    {
+      "page": "how-to-report-policy-violations"
+    },
+    {
+      "page": "how-to-share-your-petition-and-post-updates"
+    },
+    {
+      "page": "how-to-report-a-petition-or-comment"
+    },
+    {
+      "page": "navigating-the-pageloop-ui"
+    },
+    {
+      "page": "using-workflows-to-create-videos-in-invideo-ai"
+    },
+    {
+      "page": "dashboard-analytics"
+    },
+    {
+      "page": "navigating-the-pageloop-dashboard"
+    },
+    {
+      "page": "understanding-generative-media-and-credits"
+    },
+    {
+      "page": "navigating-your-pageloop-dashboard"
+    },
+    {
+      "page": "navigating-the-pageloop-dashboard-2"
+    },
+    {
+      "group": "Pageloop Helpdesk",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "pageloop-helpdesk/creating-and-updating-articles-with-video-flows"
+        },
+        {
+          "page": "pageloop-helpdesk/reviewing-and-approving-content-on-the-updates-page"
+        },
+        {
+          "page": "pageloop-helpdesk/using-pageloop-to-maintain-your-knowledge-base"
+        },
+        {
+          "page": "pageloop-helpdesk/create-a-new-article-using-flow"
+        },
+        {
+          "page": "pageloop-helpdesk/how-to-use-refine-run-to-update-articles"
+        },
+        {
+          "page": "pageloop-helpdesk/finding-updates-using-pageloop"
+        },
+        {
+          "page": "pageloop-helpdesk/how-to-schedule-an-article-to-publish-later"
+        },
+        {
+          "page": "pageloop-helpdesk/how-to-schedule-articles-for-publication"
+        },
+        {
+          "page": "pageloop-helpdesk/creating-a-new-article-or-record-in-pageloop"
+        },
+        {
+          "page": "pageloop-helpdesk/how-to-view-and-accept-updates-in-pageloop"
+        },
+        {
+          "page": "pageloop-helpdesk/how-to-share-petitions-on-change-org"
+        },
+        {
+          "page": "pageloop-helpdesk/test"
+        }
+      ]
+    },
+    {
+      "group": "InVideo",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "invideo/how-does-the-credit-system-work-on-invideo"
+        },
+        {
+          "page": "invideo/how-can-i-create-a-video-using-my-script"
+        },
+        {
+          "page": "invideo/how-can-i-create-youtube-shorts-instagram-reels-and-tiktok-videos"
+        },
+        {
+          "page": "invideo/how-can-i-create-an-explainer-video"
+        },
+        {
+          "page": "invideo/how-can-i-create-a-video-using-news-video-flow"
+        },
+        {
+          "page": "invideo/where-can-i-find-the-workflows"
+        }
+      ]
+    },
+    {
+      "group": "Planhat",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "planhat/how-to-navigate-planhat"
+        },
+        {
+          "page": "planhat/customer-portals-overview"
+        },
+        {
+          "page": "planhat/my-portfolio-filter-view"
+        },
+        {
+          "page": "planhat/manage-field-shortcut-field-description"
+        },
+        {
+          "page": "planhat/how-to-create-custom-fields"
+        },
+        {
+          "page": "planhat/managing-fields"
+        },
+        {
+          "page": "planhat/ways-to-segment-your-customers-in-planhat"
+        },
+        {
+          "page": "planhat/data-models"
+        },
+        {
+          "page": "planhat/how-to-think-about-data-in-planhat"
+        }
+      ]
+    },
+    {
+      "group": "Sybill",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "sybill/test-sample-article"
+        },
+        {
+          "page": "sybill/profile-settings-a-complete-guide"
+        },
+        {
+          "page": "sybill/slack-notifications-settings"
+        },
+        {
+          "page": "sybill/crm-settings"
+        },
+        {
+          "page": "sybill/call-sharing-settings"
+        },
+        {
+          "page": "sybill/team-management-settings"
+        }
+      ]
+    },
+    {
+      "group": "SuperOps",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "superops/how-to-sign-a-petition-with-privacy-options"
+        },
+        {
+          "page": "superops/navigating-the-home-screen"
+        },
+        {
+          "page": "superops/a-guide-to-setting-up-superops"
+        },
+        {
+          "page": "superops/getting-started-with-superops"
+        }
+      ]
+    },
+    {
+      "group": "General",
+      "icon": "folder",
+      "pages": [
+        {
+          "page": "general/testing-anchor-links"
+        },
+        {
+          "page": "general/testing-copy-paste"
+        },
+        {
+          "page": "general/all-editor-options"
+        }
+      ]
+    },
+    {
+      "group": "Guides & FAQs",
+      "icon": "book-bookmark",
+      "pages": [
+        {
+          "page": "guides-faqs/templates-announcing-atom-to-your-employees"
+        },
+        {
+          "page": "guides-faqs/testing-webhook"
+        }
+      ]
+    },
+    {
+      "group": "PROD Import 2026-06-25",
+      "icon": "book-bookmark",
+      "pages": [
+        {
+          "page": "prod-import-2026-06-25/using-article-templates"
+        },
+        {
+          "page": "prod-import-2026-06-25/managing-your-pageloop-settings"
+        },
+        {
+          "page": "prod-import-2026-06-25/article-template"
+        },
+        {
+          "page": "prod-import-2026-06-25/customize-brand-colors-for-image-annotations"
+        },
+        {
+          "page": "prod-import-2026-06-25/review-and-apply-article-updates"
+        },
+        {
+          "page": "prod-import-2026-06-25/run-audits-to-fix-broken-links-and-conflicts"
+        },
+        {
+          "page": "prod-import-2026-06-25/getting-started-with-pageloop"
+        },
+        {
+          "page": "prod-import-2026-06-25/set-up-linear-for-proactive-suggestions"
+        },
+        {
+          "page": "prod-import-2026-06-25/types-of-update-suggestions"
+        },
+        {
+          "page": "prod-import-2026-06-25/set-up-linear-for-proactive-suggestions-2"
+        },
+        {
+          "page": "prod-import-2026-06-25/capture-manual-screenshots-and-review-article-updates"
+        },
+        {
+          "page": "prod-import-2026-06-25/annotate-and-edit-screenshots"
+        },
+        {
+          "page": "prod-import-2026-06-25/getting-started-with-pageloop-2"
+        },
+        {
+          "page": "prod-import-2026-06-25/connect-intercom-as-your-help-center"
+        },
+        {
+          "page": "prod-import-2026-06-25/using-the-pageloop-chrome-extension"
+        },
+        {
+          "page": "prod-import-2026-06-25/find-updates-for-your-articles"
+        },
+        {
+          "page": "prod-import-2026-06-25/working-with-proactive-suggestions"
+        },
+        {
+          "page": "prod-import-2026-06-25/connect-zendesk-as-your-help-center"
+        },
+        {
+          "page": "prod-import-2026-06-25/connect-freshdesk-as-your-help-center"
+        },
+        {
+          "page": "prod-import-2026-06-25/set-up-slack-for-proactive-suggestions"
+        },
+        {
+          "page": "prod-import-2026-06-25/set-up-jira-for-proactive-suggestions"
+        },
+        {
+          "page": "prod-import-2026-06-25/create-and-update-documentation-from-an-uploaded-video"
+        },
+        {
+          "page": "prod-import-2026-06-25/create-articles-using-pageloop"
+        },
+        {
+          "page": "prod-import-2026-06-25/understanding-pageloop-articles-and-updates"
+        },
+        {
+          "page": "prod-import-2026-06-25/publish-new-articles-to-your-help-center"
+        },
+        {
+          "page": "prod-import-2026-06-25/publish-a-draft-article-to-intercom"
         }
       ]
     }
