@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.pageloop.ai/schema/v1.json",
+  "site": {
+    "name": "IntoAEC Test (Freshdesk)",
+    "description": "Documentation powered by Pageloop"
+  },
+  "theme": {
+    "colors": {
+      "primary": "#4F46E5"
+    }
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        {
+          "page": "index"
+        },
+        {
+          "page": "quickstart"
+        }
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        {
+          "page": "guides/writing-docs"
+        }
+      ]
+    }
+  ]
+}
