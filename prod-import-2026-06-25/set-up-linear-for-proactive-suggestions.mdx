@@ -1,0 +1,120 @@
+---
+title: Set Up Linear for Proactive Suggestions
+description: Explains how to connect Pageloop to Linear using OAuth, choose a team to monitor, optionally filter by project, and receive proactive documentation suggestions based on completed Linear issues.
+---
+
+# Set Up Linear for Proactive Suggestions
+
+When your engineering team ships product changes in Linear, your Help Center documentation can quickly fall out of date. Pageloop bridges this gap by connecting directly to your Linear workspace and monitoring completed issues for changes that affect your documentation. Instead of manually tracking every product update, Pageloop automatically analyzes completed engineering work and generates actionable suggestions to create new articles or update existing ones, keeping your Help Center accurate for both customers and support AI agents.
+
+## How Pageloop Uses Linear to Identify Documentation Needs
+
+Pageloop focuses on **completed issues** in your selected Linear configuration. When an issue is marked as done, Pageloop examines its title, description, labels, comments, and any linked resources (such as attached pull requests or parent and child issues) to understand what changed in your product. If you select one or more projects, Pageloop analyzes only completed issues from those projects within the selected team scope.
+
+Based on this analysis, Pageloop may generate one of two types of suggestions:
+
+- **Update suggestion:** Recommends changes to one or more existing Help Center articles that may now be outdated because of the completed work.
+
+- **New article suggestion:** Recommends creating an entirely new article when the completed issue covers functionality that is not yet documented.
+
+Pageloop groups related issues into broader documentation topics rather than creating a separate suggestion for every single issue. This means you receive focused, actionable suggestions instead of a long list of individual items.
+
+## Connect Pageloop to Linear
+
+To connect your Linear workspace to Pageloop, follow these steps:
+
+1. Navigate to **Settings > Integrations** in Pageloop.
+
+2. Find **Linear** in the list of available data source integrations and click **Connect**.
+
+3. You will be redirected to Linear's authorization page. Review the permissions Pageloop is requesting (read access to your workspace) and click **Authorize** to grant access.
+
+4. After authorization, you will be redirected back to Pageloop. A configuration dialog will open automatically, displaying your Linear workspace, available **teams**, and an optional **Project** filter.
+
+You must be an admin in Pageloop to connect integrations. If you do not see the option to connect, check with your team's Pageloop admin.
+
+## Configure What Pageloop Monitors
+
+After connecting your Linear workspace, configure which completed issues Pageloop should monitor. In the configuration dialog:
+
+1. Review the list of available teams. Each team displays its name, team key, privacy status (public or private), and member count.
+
+2. Select the team whose completed issues are most relevant to your documentation. This is typically your main product or engineering team.
+
+3. Optionally select one or more projects to narrow the issues Pageloop analyzes within that team.
+
+4. Click **Save Configuration** to confirm your selection.
+
+If you do not select any projects, Pageloop monitors completed issues across the selected team. If you select one or more projects, Pageloop monitors only completed issues from those projects.
+
+You can monitor one Linear team at a time, and project selection is optional within that team. If your organization uses multiple teams and you want to change which team Pageloop monitors, you can update your selection by disconnecting the Linear integration from **Settings > Integrations** and reconnecting it. During reconnection, the configuration dialog will appear again so you can choose a different team and project scope.
+
+## What Happens After Setup
+
+Once your Linear team is configured, Pageloop periodically scans for recently completed issues. The system fetches all issues that moved to a completed state since the last scan, analyzes them against your existing Help Center content, and generates suggestions when it finds documentation gaps or outdated information. If you selected one or more projects, Pageloop limits this analysis to those projects, which can improve suggestion accuracy by focusing on the most relevant work.
+
+New suggestions appear in the **Suggestions** tab under the **Newly Detected** section.
+
+After setup, allow some time for the first suggestions to appear. The exact timing depends on how frequently issues are completed in your selected team and when the next scheduled scan runs.
+
+## Example Scenarios
+
+Here are common situations where Pageloop generates suggestions from Linear issues:
+
+- **Bug fix that changes existing behavior:** Your team completes an issue to fix a bug in the checkout flow. The fix changes how error messages are displayed. Pageloop suggests updating your Help Center article about the checkout process to reflect the new error handling.
+
+- **New feature release:** An issue for a new export feature is marked as done. Pageloop detects that no existing article covers this functionality and suggests creating a new article to document the export feature.
+
+- **UI redesign:** Several completed issues relate to a navigation redesign. Pageloop groups these issues into a single topic and suggests updating the relevant getting-started and navigation articles.
+
+- **API changes:** A completed issue describes changes to your API endpoints. Pageloop identifies the affected integration guides in your Help Center and suggests updates to keep them accurate.
+
+- **Performance improvement:** An issue for improving page load speed is completed. Pageloop evaluates whether this change affects any documented workflows or troubleshooting steps and only generates a suggestion if it impacts customer-facing documentation.
+
+## Manage Linear Suggestions
+
+Suggestions generated from Linear issues appear alongside suggestions from other connected data sources (such as Slack or Intercom) in the **Suggestions** tab. Each suggestion includes:
+
+- **Title:** A descriptive name summarizing the documentation need
+
+- **What changed:** A summary explaining the product change or gap identified from completed issues
+
+- **AI reasoning:** An explanation of why Pageloop believes your documentation needs attention
+
+- **Source logs:** Links to the original Linear issues that triggered the suggestion, so you can review the full context
+
+If Pageloop detects a new completed issue that relates to a suggestion already in the Newly Detected tab, it updates the existing suggestion with the additional context rather than creating a duplicate. This means a single suggestion can be informed by multiple related issues.
+
+For detailed instructions on reviewing and acting on suggestions, see [Working with Proactive Suggestions](Working%20with%20Proactive%20Suggestions).
+
+## Frequently Asked Questions
+
+### Will Pageloop create suggestions for every completed issue?
+
+No. Pageloop analyzes each completed issue and only generates a suggestion when it identifies a meaningful documentation gap or an outdated article. Routine maintenance tasks, internal tooling changes, and issues that do not affect customer-facing documentation are typically filtered out.
+
+### Can I monitor more than one Linear team?
+
+Pageloop supports monitoring one Linear team per workspace. You can narrow coverage within that team by selecting one or more projects in the configuration dialog. You can change which team is monitored by disconnecting and reconnecting the Linear integration from **Settings > Integrations**. The configuration dialog will appear during reconnection.
+
+### Why am I not seeing any suggestions from Linear?
+
+There are a few reasons suggestions may not appear:
+
+- **No recently completed issues:** Pageloop only analyzes issues that have moved to a completed state. If no issues have been completed recently, there is nothing to analyze.
+
+- **Team not configured:** Make sure you have selected a team in the Linear configuration dialog. The integration remains inactive until a team is selected.
+
+- **Projects selected:** If you selected one or more projects, Pageloop only analyzes completed issues from those projects. Verify that the work you expect to trigger suggestions belongs to the selected projects.
+
+- **Allow time for processing:** After initial setup, allow some time for the first suggestions to appear as Pageloop needs to run its next scheduled scan.
+
+- **Issues do not affect documentation:** If completed issues are primarily internal changes that do not impact your Help Center content, Pageloop may not generate suggestions.
+
+### What Linear permissions does Pageloop require?
+
+Pageloop requests read-only access to your Linear workspace during the OAuth authorization step. This allows Pageloop to view team information and read completed issues. Pageloop does not modify any data in your Linear workspace.
+
+### Can I disconnect Linear and reconnect later?
+
+Yes. You can disconnect the Linear integration from **Settings > Integrations** at any time. If you reconnect later, you will need to go through the OAuth authorization and team selection process again.
