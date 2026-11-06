@@ -1,0 +1,154 @@
+---
+title: Find Updates for Your Articles
+description: Explains how to use Pageloop's Find Updates feature to scan your Help Center for articles affected by product changes.
+---
+
+When your product changes, Pageloop's **Find Updates** feature scans your existing articles to identify which ones need changes.
+
+# When to Use Find Updates
+
+Use Pageloop's Find Updates feature whenever your product has changed and you want to identify which Help Center articles are affected. Common scenarios include:
+
+- **New feature releases** that change how existing features work or look.
+
+- **UI redesigns** that make existing screenshots in your articles outdated.
+
+- **Bug fixes** that change documented behavior.
+
+- **Workflow changes** that affect step-by-step instructions in your articles.
+
+# Start Find Updates from the Pageloop Web App
+
+To start finding updates from the Pageloop web app:
+
+1. Click the **New** button in the sidebar and select **Find Updates**. Alternatively, on the Updates page, click the **+ Find Updates** button. You will see two options:
+
+   - **Record Flow** - Capture your screen actions and add notes to find articles that need to be updated. This option requires the [Pageloop Chrome Extension](https://help.pageloop.ai/en/articles/13654464-using-the-pageloop-chrome-extension). We recommend this option.
+
+   - **Create Manually** - Directly add your release notes and upload media if needed, without recording a flow.
+
+2. Select **Create Manually** to go to the Find Updates form without a flow recording. If you choose **Record Flow**, the Chrome extension will open so you can record your workflow first (see the section below on recording a flow).
+
+# Fill In the Find Updates Form
+
+Whether you start from a manual entry or after saving a flow recording, you will see the Find Updates form. The form has the following fields:
+
+<Frame>
+  ![Image](../assets/c0020331fcd0-upload13265993519508052636.jpgedited)
+</Frame>
+
+### Title (Required)
+
+Enter a short, descriptive title for the update. For example: "New Setting to Download Invoices" or "Updated Navigation Menu Layout."
+
+### Release Notes (Required)
+
+Describe the product changes in detail. Paste your PRD, release notes, internal memo, or call transcripts. The more detail you provide, the more accurate Pageloop's suggestions will be.
+
+**Tips for writing effective release notes:**
+
+- Describe what changed and how it affects end users.
+
+- Mention specific features, settings, or pages that were modified.
+
+- Include before-and-after descriptions when possible.
+
+- Reference the names of buttons, menus, or options that changed.
+
+### Upload Media (Optional)
+
+Click **+ Upload Media** inside the Release Notes area to attach images or video. This media gives Pageloop visual context for the update request. When you enable the UI change toggle, Pageloop can recommend replacement screenshots from the media you provide, including context derived from uploaded video, or suggest suitable images already used elsewhere in your help center. Uploaded media also appears in the Media tab during review, where you can drag it into the article or use it when replacing a screenshot. The button tooltip reads **Upload images and video up to 100MB**.
+
+### Impacted Categories (Required)
+
+Select the Help Center categories most likely affected by the product change. Pageloop will scan articles within these categories to find ones that need updating. For major updates, you can select all categories for a comprehensive scan.
+
+### 'This Is a UI Change' Toggle
+
+Enable the **This is a UI change** toggle if the update involves visual changes to your product's interface. When this toggle is on, Pageloop can:
+
+- Suggest **deleting outdated screenshots** from your articles.
+
+- Suggest **replacing existing screenshots** by matching against existing article images and recommending either the new images you provide or suitable images already used elsewhere in the help center.
+
+If this toggle is off, Pageloop will only suggest **text updates&#x20;**&#x74;o your articles.
+
+If you enable this toggle but have not provided any images, Pageloop will display a warning reminding you that screenshots or images are needed for image replacement suggestions.
+
+## Submit and Wait for Results
+
+After filling in all required fields, click the **Find Updates** button in the top right corner to start the scan. Pageloop will analyze your release notes and compare them against the articles in your selected categories.
+
+Processing can take several minutes depending on the number of articles being scanned. You can stay on the update detail page to monitor progress, questions, and generated updates, or navigate away while processing is in progress. Pageloop will send you an email notification or Slack notification \[if you have integrated Slack] when the results are ready. While processing or failed-state overlays appear on the article-list panel, the sidebar remains available for **Details** and **Chat** context. If Pageloop needs clarification, the update can show a **Needs input** status; answer Pageloop Agent questions in the **Chat** tab on the update detail page.
+
+# What Pageloop Finds
+
+Once processing is complete, Pageloop identifies articles that are impacted by the product changes you described. For each impacted article, Pageloop generates specific update suggestions, which may include:
+
+- **Text additions** - New content that should be added to the article.
+
+- **Text replacements** - Existing content that should be updated with new wording.
+
+- **Text deletions** - Outdated content that should be removed.
+
+- **Screenshot additions, replacements, or deletions** - Image changes when the UI change toggle was enabled.
+
+You can review all suggested changes in the Updates tab. For a complete guide on reviewing, accepting, and applying these changes, see [Review and Apply Article Updates](https://help.pageloop.ai/en/articles/13654536-review-and-apply-article-updates).
+
+---
+
+# Frequently Asked Questions
+
+## Why are no updates being found?
+
+If Pageloop returns no results, consider the following:
+
+- **Check your category selection.** Make sure you selected the categories that contain the articles most likely affected by the change. Try selecting additional or all categories.
+
+- **Add more detail to your release notes.** Vague or overly brief notes make it harder for Pageloop to identify relevant articles. Include specific feature names, UI elements, and descriptions of what changed.
+
+- **Verify your Help Center is connected and synced.** Pageloop can only scan articles that have been synced from your connected Help Center.
+
+## I forgot to add some detail. Do I need to do the update from start?
+
+No, you don't have to start from scratch. Just go to the Updates page, and against the Update you ran, you will find three dots. Click on that to find the **Refine & Run** option.
+
+## How do I get screenshot replacement suggestions?
+
+To receive screenshot replacement suggestions from Pageloop, you need to do two things:
+
+1. Enable the **This is a UI change** toggle in the Find Updates form.
+
+2. Provide media - either by uploading it directly in the Release Notes area, or by capturing screenshots during a flow recording using Ctrl+S.
+
+Pageloop will then compare your new images against the existing screenshots in your articles and suggest replacements where it finds a match.
+
+## Can I start Find Updates from the Chrome extension?
+
+Yes. Open the Pageloop Chrome Extension and select **Find Updates** as the flow type on the recording setup screen. After recording and saving your flow, the Pageloop web app will open with the Find Updates form pre-populated with your recorded steps. See [Using the Pageloop Chrome Extension](https://help.pageloop.ai/en/articles/13654464-using-the-pageloop-chrome-extension) for full details on recording a flow.
+
+## How long does scanning take?
+
+Scanning can take several minutes depending on the number of articles in your selected categories. Pageloop will send you an email when the results are ready, so you do not need to wait on the page.
+
+## Can I record a flow from the web app instead of the Chrome extension?
+
+Yes. On the Find Updates form in the Pageloop web app, the left panel displays an option to **Record Flow with Chrome**. Clicking this button will open the Chrome extension (if installed) and start a recording session. If the extension is not installed, you will be prompted to install it.
+
+## In what situations will I need to use the Find Updates feature?
+
+When your product changes, your Help Center articles need to keep up. Outdated documentation leads to confused customers, increased support tickets, and unreliable answers from AI support agents.
+
+## How does Recording a Flow help with Finding Updates?
+
+Recording a flow with the [Pageloop Chrome Extension](https://help.pageloop.ai/en/articles/13654464-using-the-pageloop-chrome-extension) before submitting your Find Updates request gives Pageloop additional context about the changes. A flow recording captures your actual clicks and interactions with the updated product interface, along with screenshots you take during the recording.
+
+This helps in two important ways:
+
+- **Better change detection** - By seeing the actual updated UI, Pageloop can more accurately identify which articles are affected and what specific changes are needed.
+
+- **Screenshot replacement suggestions** - The screenshots you capture during the flow recording can be matched against existing images in your articles. When combined with the "This is a UI change" toggle, Pageloop can suggest replacing outdated screenshots with screenshots from your recording or relevant media from your update request.
+
+When you record a flow, the captured steps appear on the left side of the Find Updates form, and you fill in the release notes and other details on the right side.
+
+For detailed instructions on how to record a flow, see [Using the Pageloop Chrome Extension](https://help.pageloop.ai/en/articles/13654464-using-the-pageloop-chrome-extension).
